@@ -1,0 +1,29 @@
+body 
+{
+    background: linear-gradient(135deg, #12121c, #1a1a2e);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-custom 
+{
+    background-color: #1a1a26;
+    border: 1px solid #3b3b54;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.form-control, .form-select 
+{
+    background-color: #252538;
+    border: 1px solid #3b3b54;
+    color: #fff;
+}
+
+.d-none 
+{
+    display: none !important;
+}
