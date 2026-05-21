@@ -257,31 +257,32 @@ function ClassificaGiocatori()
     }
 }
 
-$rotta = '/';
-if (isset($_SERVER['PATH_INFO']))
+$rotta = '';
+
+if (isset($_GET['azione']))
 {
-    $rotta = $_SERVER['PATH_INFO'];
+    $rotta = $_GET['azione'];
 }
 
 switch ($rotta) 
 {
-    case '/login':
+    case 'login':
         Login(); 
         break;
 
-    case '/registrati':
+    case 'registrati':
         Registrati();
         break;
 
-    case '/salva-click':
+    case 'salva-click':
         SalvaClick();
         break;
 
-    case '/classifica':
+    case 'classifica':
         Classifica();
         break;
 
-    case '/classifica-giocatori': 
+    case 'classifica-giocatori': 
         ClassificaGiocatori();
         break;
 

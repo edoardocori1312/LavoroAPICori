@@ -265,7 +265,6 @@ function CaricaClassificaGiocatori()
             let utente = data[i].username;
             let click = data[i].click;
 
-            // Grafica modificata: mostra il nome dell'utente in evidenza senza il badge della fazione
             html += '<div class="d-flex justify-content-between align-items-center mb-2 p-2 rounded small" style="background-color: #212130; border-left: 3px solid #ffc107;">' +
                         '<div>' +
                             '<span class="text-secondary me-2">#' + posizione + '</span>' +
